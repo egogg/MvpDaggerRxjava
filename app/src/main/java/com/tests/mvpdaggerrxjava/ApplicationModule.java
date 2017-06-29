@@ -13,12 +13,12 @@ import dagger.Provides;
 public final class ApplicationModule {
     private final Context mContext;
 
-    public ApplicationModule(Context context) {
+    ApplicationModule(Context context) {
         mContext = context;
     }
 
     @Provides
-    public Context provideContext() {
+    Context provideContext() {
         return mContext;
     }
 }
